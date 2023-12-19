@@ -1,6 +1,8 @@
 input,textarea,select {
   font-family: OpenSans,sans-serif;
   font-size: 16px;
+  background: #FFF;
+  border: 1px solid rgba(0,0,0,.4);
 }
 
 table {
@@ -12,21 +14,29 @@ td,
 th {
     border: 1px solid rgb(190, 190, 190);
     padding: 2px;
+    text-align:center;
 }
 
 thead th {
     background-color: rgba(207, 207, 207, 0.3);
 }
 
-table td > input, table td > textarea, table td > select {
+td > input[type='text'], 
+td > input[type='date'], 
+td > textarea, 
+td > select {
     width: -webkit-fill-available;
+    width: -moz-available;
 }
+
 textarea {
     appearance: none;
     resize: none;
     height: 22px;
     padding: 1px;
     display: block;
+    overflow: hidden;
+
 }
 
 button.icon {
@@ -38,6 +48,18 @@ button.icon > svg {
     height: 18px;
     width: 18px;
     vertical-align: middle;
+}
+
+select:hover,
+input:hover,
+textarea:hover,
+button:hover {
+    outline: 1px solid rgba(0,0,0,.2);
+}
+
+button:active {
+    outline: 1px solid rgba(0,0,0);
+    color:#000;
 }
 
 .row-align {

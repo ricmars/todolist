@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "OpenSans";
+  src: local('pxfont-OpenSans-Regular'), url(./fonts/pxfont-opensans-regular.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local('pxfont-OpenSans-Bold'), url(./fonts/pxfont-opensans-bold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: OpenSans,sans-serif;
+  font-size: 16px;
+  background-color: #FFF;
+  padding: 14px;
+}

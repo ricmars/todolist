@@ -1,0 +1,47 @@
+input,textarea,select {
+  font-family: OpenSans,sans-serif;
+  font-size: 16px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 2px;
+}
+
+thead th {
+    background-color: rgba(207, 207, 207, 0.3);
+}
+
+table td > input, table td > textarea, table td > select {
+    width: -webkit-fill-available;
+}
+textarea {
+    appearance: none;
+    resize: none;
+    height: 22px;
+    padding: 1px;
+    display: block;
+}
+
+button.icon {
+    background: none;
+    border: none;
+}
+
+button.icon > svg {
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+}
+
+.row-align {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
